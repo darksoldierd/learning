@@ -1,0 +1,64 @@
+   let op;
+   let w1=0,l1=0,t1=0;
+function check(op){
+    let c=Math.random();
+    if(op==1){
+        if(c>=0&&c<(1/3)){
+              t1++;
+              document.getElementById("t").textContent=`${t1}`;
+        }
+        if(c>=(1/3)&&c<(2/3)){
+              l1++;
+              document.getElementById("l").textContent=`${l1}`;
+        }
+         if(c>=(2/3)&&c<1){
+              w1++;
+              document.getElementById("w").textContent=`${w1}`;
+        }
+    }
+    if(op==2){
+        if(c>=(1/3)&&c<(2/3)){
+              t1++;
+              document.getElementById("t").textContent=`${t1}`;
+        }
+         if(c>=0&&c<(1/3)){
+              w1++;
+              document.getElementById("w").textContent=`${w1}`;
+        }
+         if(c>=(2/3)&&c<1){
+              l1++;
+              document.getElementById("l").textContent=`${l1}`;
+        }
+    }
+    if(op==3){
+        if(c>=(2/3)&&c<1){
+              t1++;
+              document.getElementById("t").textContent=`${t1}`;
+        }
+        if(c>=0&&c<(1/3)){
+              l1++;
+              document.getElementById("l").textContent=`${l1}`;
+        }
+         if(c>=(1/3)&&c<(2/3)){
+              w1++;
+              document.getElementById("w").textContent=`${w1}`;
+        }
+    }
+}
+document.getElementById("rock").onclick=function(){
+    check(1);
+}
+document.getElementById("paper").onclick=function(){
+    check(2);
+}
+document.getElementById("scissor").onclick=function(){
+    check(3);
+}
+document.getElementById("reset").onclick=function(){
+    w1=0;
+    l1=0;
+    t1=0;
+    document.getElementById("t").textContent=`${t1}`;
+    document.getElementById("w").textContent=`${w1}`;
+    document.getElementById("l").textContent=`${l1}`;
+}

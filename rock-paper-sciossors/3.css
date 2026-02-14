@@ -1,0 +1,90 @@
+body{
+    font-family:'Roboto', Arial;
+    font-weight: bold;
+    color:white;
+}
+.parent{
+    height:120vh;
+    width:120vw;
+    display:flex;
+    justify-content: left;
+    align-items: center;
+    background-color: rgb(24,24,24);
+}
+.child{
+    /* background-color: aqua; */
+    height:500px;
+    width:600px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    gap: 50px;
+}
+.head{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:row;
+    gap:90px;
+}
+.content{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+}
+.content button{
+    background-color:rgb(24,24,24);
+    height:145px;
+    width:145px;
+    border-radius:50%;
+    border:solid white 6px;
+    cursor:pointer;
+}
+.content button:hover{
+    opacity:.8;
+}
+.content button:active{
+   opacity:.4;
+}
+img{
+    height:91px;
+    width:61px;
+}
+.score{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    gap:30px;
+}
+.score button{
+    width:100px;
+    height:40px;
+    border-radius:8px;
+
+}
+.score button:hover{
+    opacity:.8;
+}
+.score button:active{
+   opacity:.4;
+}
+.gs{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:45px;
+    
+}
+.w,.l,.t{
+    display:flex;
+    justify-content: center;
+    align-items: top;
+    width:25px;
+}
+.w p,.l p,.t p{
+    margin:0px;
+    color:white;
+}

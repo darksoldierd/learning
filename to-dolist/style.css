@@ -1,0 +1,80 @@
+body{
+    background-color: grey;
+}
+
+.todo1{
+    display:flex;
+    flex-direction: column;
+}
+
+.task{
+    display:flex;
+    justify-content: center;
+}
+
+.list{
+
+  
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    position: relative;
+    left :200px;
+    top: 65px;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction :row;
+}
+
+
+.inp,.dt{
+    border-radius:5px;
+    outline: none;
+    border:none;
+    width:150px;
+    height: 45px;
+    margin: 0 40px 0 0;
+    font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont,
+                 "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.add1{
+    background-color: rgb(14, 153, 14);
+    border: none;
+    border-radius: 5px;
+    width:80px;
+    transition:background-color.15s;
+    font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont,
+                 "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.add1:hover{
+    background-color: green;
+}
+
+.add1:active{
+    background-color: rgb(1, 106, 1);
+}
+
+.del-btn{
+    background-color: rgb(153, 14, 14);
+    border: none;
+    border-radius: 5px;
+    height:45px;
+    width:80px;
+    transition:background-color.15s;
+    font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont,
+                 "Segoe UI", Roboto, Helvetica, Arial, sans-serif;  
+}
+
+.del-btn:hover{
+     background-color: red;
+}
+
+.del-btn:active{
+    background-color: rgb(92, 1, 1);
+}
